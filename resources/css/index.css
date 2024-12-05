@@ -166,11 +166,15 @@ section h2 {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+.course a {
+  text-decoration: none;
+}
 
 .course:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   border-color: var(--primary-color);
+  background-color: #eed6d3;
 }
 
 .course-image img {
