@@ -11,7 +11,8 @@
   --secondary-color: #6c757d; /* A darker gray for better contrast */
   --background-light: #f4f6f9;
   --text-color: #36454f;
-  --hover-color: #eed6d3; 
+  --hover-color: #eed6d3;
+  --icon-color: #2563eb;  /* A bright blue that stands out */ 
 }
 
 body {
@@ -109,6 +110,49 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+/* About Me */
+/* Add this to your CSS file */
+.about-me .intro,
+.about-me .background,
+.about-me .growth,
+.about-me .achievements,
+.about-me .closing {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-me i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    min-width: 30px;
+    margin-top: 0.2rem;
+}
+
+.about-me .achievements i {
+    margin-top: 0.5rem;
+}
+
+.about-me .achievements ul {
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+.about-me .achievements li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.about-me .achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
 
 /* Sections */
 
