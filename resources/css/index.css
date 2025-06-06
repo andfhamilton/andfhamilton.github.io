@@ -43,15 +43,17 @@ nav .logo {
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 250px;  /* Fixed width */
 }
 
 nav .logo img {
-  width: 100%;
+  width: 250px;
   height: 60px;
   border-radius: 2%;
-  object-fit: cover;
+  object-fit: contain;
   border: 2px solid var(--primary-color);
 }
+
 
 nav .logo h1 {
   font-size: 1.5rem;
@@ -340,9 +342,13 @@ footer .nav-links {
       flex-direction: column;
       text-align: center;
     }
+
+    nav .logo {
+    max-width: 250px;
+  }
     nav .logo img{
-      object-fit: contain;
-      max-width: 100%;
+      max-width: 250px;
+      height: 50px;
     }
     
     .nav-links {
